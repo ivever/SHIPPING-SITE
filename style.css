@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blue;
+}
+
+#nav {
+    padding: 25px;
+    color: rgba(44,42,42,.863);
+}
+
+#brand {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.nav-link {
+    color: rgba(44,42,42,.863);
+    font-weight: 800;
+}
+
+#ship-btn {
+    margin-right: 10px;
+    color: white;
+    background-color: rgb(128, 8, 8);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-color: rgb(128, 8, 8);
+    transition: all 1s;
+}
+
+#ship-btn:hover {
+    color: rgb(128, 8, 8);
+    background-color: white;
+}
+
+#ship-link {
+    color: rgba(44,42,42,.863);
+}
+
+#track-btn {
+    color: white;
+    background-color: rgb(128, 8, 8);
+    padding: 20px;
+    margin: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#banner h1, #banner p {
+    font-weight: 800;
+}
+
+#tracking {
+    margin: 0 auto;
+}
+
+.card img {
+    width: auto;
+    height: 250px;
+}
+
+#learn-btn {
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+.show-more #show-more {
+    border-radius: 50px;
+    background-color: rgb(128, 8, 8);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#wordwide-container {
+    background-position: center;
+    margin-top: -35px;
+}
+
+.show-more {
+    height: 100px;
+}
+
+#app-show {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 900px) {
+    #phone-app {
+        display: none;
+    }
+}
+
+.tech-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.tech-img {
+    background-color: white;
+    border-radius: 100%;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.tech {
+    padding: 35px 35px;
+    background-color: rgb(15, 15, 43);
+    width: 33.33%;
+    align-content: center;
+    line-height: 2;
+}
+
+.social {
+    width: 33.33%;
+    align-content: center;
+    padding: 35px 35px;
+    line-height: 2;
+    background-color: rgb(32, 175, 241);
+}
+
+.timely {
+    width: 33.33%;
+    align-content: center;
+    padding: 35px 35px;
+    line-height: 2;
+    background-color: rgb(141, 10, 10);
+    height: 100%;
+}
+
+
+@media screen and (max-width: 800px) {
+    .tech-container {
+        flex-direction: column;
+    }
+    .tech, .social, .timely {
+        width: 100%;
+    }
+}
+
+.location-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.ghana {
+    width: 33.33%;
+    align-content: center;
+    padding: 40px 60px;
+    font-weight: 500;
+    background-image: url('https://i.pinimg.com/originals/a8/e1/ae/a8e1ae660c0770376599a9692ad214bf.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.canada {
+    width: 33.33%;
+    align-content: center;
+    padding: 40px 60px;
+    font-weight: 500;
+    background-image: url('https://wallup.net/wp-content/uploads/2017/11/17/339155-cityscape-Toronto-railway-long_exposure-light_trails-Canada-night-748x499.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.usa {
+    width: 33.33%;
+    align-content: center;
+    padding: 40px 60px;
+    font-weight: 500;
+    background-image: url('https://i.pinimg.com/originals/1d/de/55/1dde55ac402775a8f3cb4b1c10e5b89c.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 800px) {
+    .location-container {
+        flex-direction: column;
+    }
+    .ghana, .canada, .usa {
+        width: 100%;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 150px;
+}
+@media screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+    }
+}
