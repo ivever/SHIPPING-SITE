@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blue;
+}
+
+#nav {
+    padding: 25px;
+    color: rgba(44,42,42,.863);
+}
+
+#brand {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.nav-link {
+    color: rgba(44,42,42,.863);
+    font-weight: 800;
+}
+
+#ship-btn {
+    margin-right: 10px;
+    color: white;
+    background-color: rgb(128, 8, 8);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-color: rgb(128, 8, 8);
+    transition: all 1s;
+}
+
+#ship-btn:hover {
+    color: rgb(128, 8, 8);
+    background-color: white;
+}
+
+#ship-link {
+    color: rgba(44,42,42,.863);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 150px;
+}
+@media screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+    }
+}
